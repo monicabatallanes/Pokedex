@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    border: 5px solid rgb(122, 12, 12);
+    border-radius: 10px;
+    margin: 10px;
+    background-color: rgb(163, 27, 27);
+}
+
+.botones{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 5px;
+}
+
+.boton1{
+    width: 20px;
+    height: 20px;
+    margin: 7px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: blue;
+} 
+
+.boton2{
+    width: 20px;
+    height: 20px;
+    margin: 7px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: yellow ;
+}
+
+.boton3{
+    width: 20px;
+    height: 20px;
+    margin: 7px; 
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: firebrick;
+}
+
+h1{
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+input{
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid darksalmon;
+    border-radius: 5px;
+    background-color: darksalmon;
+    color: white;
+}
+
+.pantalla{
+    width: 75%;
+    height: 500px;
+    border: 4px solid red;
+    border-radius: 10px;
+    margin-left: 40px;
+    padding-top: 20px;
+    background-color: azure;
+}
+
+.imgPoke{
+   width: 250px;
+   height: fit-content;
+}
+
+#infoPoke{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h2{
+    margin: 10px;
+}
+
+p{
+    margin: 15px;
+}
+
+li{
+    margin: 5px;
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid rgb(76, 76, 201);
+    border-radius: 5px;
+    background-color: rgb(76, 76, 201);
+}
+
+.pulsador{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid black;
+    background-color:black;
+    margin: 5px;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.tactil-box{
+    display: flex;
+    justify-content: center;
+}
+
+.tactil{
+    width: 150px;
+    height: 80px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: gray;
+}
+
+@media (max-width: 560px){
+    input, button{
+        margin: 5px;
+        padding: 2px;
+    }
+    
+    .pulsador{
+        display: none;
+    }
+}

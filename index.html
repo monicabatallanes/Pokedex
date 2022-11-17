@@ -8,23 +8,35 @@
     <title>Pokedex</title>
 </head>
 <body>
-    <header>
-
-    </header>
     <main>
-        <section>
-            <h1>My Pokedex</h1>
-            <input type="text" name="pokeName" id="pokeName" placeholder="nombrePokemon">
-            <br>
-            <img src="./assets/Ash_Pokemon.png" alt="Pokemon" name="Pokemon" width="100px" height="150px">
-            <br>
-            <button type="submit">Cambiar Pokemon</button>
+        <section class="container">
+            <div>
+                <div class="botones">
+                    <div class="boton1"></div>
+                    <div class="boton2"></div>
+                    <div class="boton3"></div>
+                </div> 
+                <h1>My Pokedex</h1>
+            </div>
+            
+            <div class="pantalla row">
+                <div class="col">
+                    <img src="./assets/Ash_Pokemon.png" alt="Pokemon" name="Pokemon" id="pokeImg" class="imgPoke ">
+                </div>
+                <div id="infoPoke" class="col"></div>
+            </div>
+            <div class="boton row">
+                <div class="pulsador"></div>
+                <input type="text" name="pokeName" id="pokeName" placeholder="nombrePokemon" class="col">
+                <button type="submit" onClick="fetchPokemon()" class="col">Cambiar Pokemon</button>
+            </div>
+
+            <div class="tactil-box">
+                <div class="tactil"></div>
+            </div>
         </section>
 
     </main>
-    <footer>
-
-    </footer>
     
 <script src="./poke.js"></script>
 </body>

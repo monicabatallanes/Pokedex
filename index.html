@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <title>Pokedex</title>
 </head>
 <body>
@@ -22,13 +25,38 @@
             <div class="pantalla row">
                 <div class="col">
                     <img src="./assets/Ash_Pokemon.png" alt="Pokemon" name="Pokemon" id="pokeImg" class="imgPoke ">
+                    <div id="infoPoke"></div>
+            </div>
+                <div class="col">
+                    <div id="tipoPoke" class="tipoPoke"></div>
+                    <div id="statPoke" class="statPoke"></div>
+                    <div id="movePoke" class="movePoke"></div>
                 </div>
-                <div id="infoPoke" class="col"></div>
+                
             </div>
             <div class="boton row">
                 <div class="pulsador"></div>
                 <input type="text" name="pokeName" id="pokeName" placeholder="nombrePokemon" class="col">
                 <button type="submit" onClick="fetchPokemon()" class="col">Cambiar Pokemon</button>
+                <div class="cruz row">
+                    <div class="left col">
+                        <img src="./assets/002-flecha-1.png" alt="left" width="25px" height="25px">
+                    </div>
+                    <div class="centro col">
+                        <div class="up">
+                            <img src="./assets/003-flecha-2.png" alt="up" width="25px" height="25px">
+                        </div>
+                        <div class="center">
+                            <img src="./assets/001-boton-circular.png" alt="center" width="27px" height="27px">
+                        </div>
+                        <div class="down">
+                            <img src="./assets/004-flecha-3.png" alt="down" width="25px" height="25px">
+                        </div>
+                    </div>
+                    <div class="right col">
+                        <img src="./assets/001-flecha.png" alt="right" width="25px" height="25px">
+                    </div>
+                </div>
             </div>
 
             <div class="tactil-box">
